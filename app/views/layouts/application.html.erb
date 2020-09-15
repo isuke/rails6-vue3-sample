@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails6Vue3Sample</title>
+    <title>Rails6 + Vue3 Sample</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <script src="<%= assets_paths[:js] %>"></script>
+    <link rel="stylesheet" type="text/css" href="<%= assets_paths[:css] %>" media="screen">
   </head>
 
   <body>
-    <%= yield %>
+    <div id="app">
+      <root view-name="<%= view_name %>" user-id="<%= current_user&.id %>"></root>
+    </div>
   </body>
 </html>

@@ -5,6 +5,18 @@ class PagesController < ApplicationController
     render 'empty'
   end
 
+  def signup
+    render 'empty'
+  end
+
+  def login
+    render 'empty'
+  end
+
+  def mypage
+    render 'empty'
+  end
+
   private
 
   def redirect_logout_user

@@ -61,6 +61,9 @@ module.exports = (env, argv) =>
       new AssetsWebpackPlugin()
       new webpack.HotModuleReplacementPlugin()
       new VueLoaderPlugin()
+      new webpack.EnvironmentPlugin(
+        BACKEND_URL: process.env.BACKEND_URL
+      )
     ]
 
   if argv.mode == 'development'

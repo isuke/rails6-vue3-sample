@@ -58,7 +58,7 @@ module.exports = (env, argv) =>
         }
       ]
     plugins: [
-      new AssetsWebpackPlugin()
+      new AssetsWebpackPlugin(removeFullPathAutoPrefix: true)
       new webpack.HotModuleReplacementPlugin()
       new VueLoaderPlugin()
       new webpack.EnvironmentPlugin(

@@ -1,6 +1,6 @@
 <template lang="pug">
 .mypage
-  h1.title Mypage
+  h1.title My Page
   h2.email {{ user.email }}
   a(@click.prevent="logout", href="#") logout
 </template>

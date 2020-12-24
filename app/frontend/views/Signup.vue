@@ -11,7 +11,7 @@
     label.label(for="password_confirmation") Password Confirmation
     input.input#password_confirmation(type="password", v-model="passwordConfirmation")
 
-    input.button(type="submit", @click.prevent="submit")
+    button.button(@click.prevent="submit") Submit
 </template>
 
 <script lang="coffee">

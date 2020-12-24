@@ -8,7 +8,7 @@
     label.label(for="password") Password
     input.input#password(type="password", v-model="password")
 
-    input.button(type="submit", @click.prevent="submit")
+    button.button(@click.prevent="submit") Submit
 </template>
 
 <script lang="coffee">
